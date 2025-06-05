@@ -1,4 +1,6 @@
-Ini project : 
+# Belajar Golang RESTFul dan Clean Architecture
 
-1. Jalankan projek pada terminal dengan perintah 
+## Cara Menjalankan Projek
+1. Lakukan execute command
     go mod vendor
+    go mod download
