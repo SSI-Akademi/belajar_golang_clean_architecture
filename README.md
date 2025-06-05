@@ -6,3 +6,9 @@
    go mod vendor
    go mod download
    ```
+
+2. Ketika import atau download library baru lakukan
+    ```bash
+    go mod tidy
+    go mod vendor
+    ```
