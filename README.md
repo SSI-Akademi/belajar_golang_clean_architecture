@@ -2,5 +2,7 @@
 
 ## Cara Menjalankan Projek
 1. Lakukan execute command
-    go mod vendor
-    go mod download
+    ```bash
+   go mod vendor
+   go mod download
+   ```
