@@ -13,9 +13,9 @@
     go mod vendor
     ```
 
-3. Silahkan setting koneksi ke database pada .env**
+3. Silahkan setting koneksi ke database pada **.env**
 
-4. Buatlah database dengan nama articles** (sesuai key DATABASE_NAME** pada .env**) Lakukan eksekusi query pada sql editor
+4. Buatlah database dengan nama **articles** (sesuai key **DATABASE_NAME** pada **.env**) Lakukan eksekusi query pada sql editor
    ```bash
     CREATE TABLE articles(
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
@@ -31,4 +31,4 @@
    go run cmd/main.go
    ```
 
-6. Untuk test API gunakan postman dan import collection pada file testapi.json**
+6. Untuk test API gunakan postman dan import collection pada file **testapi.json**
