@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "2acc3bb1-876a-4426-9b9b-e14cac3366b0",
+		"name": "Golang RESTFul API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33388508"
+	},
+	"item": [
+		{
+			"name": "Get Articles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/articles",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Articles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"in commodo Excepteur\",\r\n  \"content\": \"exercitation magna\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/articles",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/articles/:article_id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"articles",
+						":article_id"
+					],
+					"variable": [
+						{
+							"key": "article_id",
+							"value": "",
+							"description": "Article Id"
+						}
+					]
+				},
+				"description": "Delete Article"
+			},
+			"response": [
+				{
+					"name": "Success delete article 1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/articles/:article_id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"articles",
+								":article_id"
+							],
+							"variable": [
+								{
+									"key": "article_id"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"code\": 10065600.771974474,\n  \"status\": \"aute officia voluptate\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Article by ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"in commodo Excepteur\",\n  \"content\": \"exercitation magna\"\n}",
+					"options": {
+						"raw": {
+							"headerFamily": "json",
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/articles/:article_id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"articles",
+						":article_id"
+					],
+					"variable": [
+						{
+							"key": "article_id",
+							"value": "",
+							"description": "Article Id"
+						}
+					]
+				},
+				"description": "Update Article"
+			},
+			"response": [
+				{
+					"name": "Success update article 1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-API-Key",
+								"value": "<API Key>",
+								"description": "Added as a part of security scheme: apikey"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"in commodo Excepteur\",\n  \"content\": \"exercitation magna\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/articles/:article_id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"articles",
+								":article_id"
+							],
+							"variable": [
+								{
+									"key": "article_id"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"code\": -93663999.7330135,\n  \"status\": \"amet aliquip sint \",\n  \"data\": [\n    {\n      \"id\": -95467443.58734505,\n      \"title\": \"nisi elit velit dolore\",\n      \"content\": \"aliquip cillum Lorem irure nisi\",\n      \"created_at\": \"consectetur\",\n      \"updated_at\": \"officia esse id fugiat\"\n    },\n    {\n      \"id\": 25983137.56557688,\n      \"title\": \"magna ex labore\",\n      \"content\": \"Lorem anim\",\n      \"created_at\": \"ips\",\n      \"updated_at\": \"dolo\"\n    }\n  ]\n}"
+				}
+			]
+		}
+	]
+}
